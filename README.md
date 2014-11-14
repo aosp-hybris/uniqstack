@@ -11,7 +11,7 @@ Debugging/Profiling
 ## Show debug info
 
 To show debug info, setup `UNIQSTACK_DEBUG=1` before you launch the
-copycat process, then you can use systemd's tool to display the
+uniqstack process, then you can use systemd's tool to display the
 info.
 
 ```
@@ -20,7 +20,7 @@ systemctl status uniqstack
 
 ## QML Debugging/Profiling
 
-When execute copycat, add following args to enable QML
+When execute uniqstack, add following args to enable QML
 debugging/profiling
 
 ```
