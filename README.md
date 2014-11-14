@@ -1,8 +1,8 @@
 
-CopyCat
+UniqStack
 ============
 
-CopyCat is QtWaylandCompositor origin based on luna-next and lipstick.
+UniqStack is QtWaylandCompositor origin based on luna-next and lipstick.
 
 
 Debugging/Profiling
@@ -10,12 +10,12 @@ Debugging/Profiling
 
 ## Show debug info
 
-To show debug info, setup `COPYCAT_DEBUG=1` before you launch the
+To show debug info, setup `UNIQSTACK_DEBUG=1` before you launch the
 copycat process, then you can use systemd's tool to display the
 info.
 
 ```
-systemctl status copycat
+systemctl status uniqstack
 ```
 
 ## QML Debugging/Profiling
@@ -24,7 +24,7 @@ When execute copycat, add following args to enable QML
 debugging/profiling
 
 ```
-copycat -qmljsdebugger=port:3768,block
+uniqstack -qmljsdebugger=port:3768,block
 ```
 
 For more info, please see:
