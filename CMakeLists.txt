@@ -51,3 +51,4 @@ ENDIF()
 
 # Add source dirs
 ADD_SUBDIRECTORY(src)
+ADD_SUBDIRECTORY(data)

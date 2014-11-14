@@ -1,0 +1,17 @@
+[Unit]
+Description=Copycat launcher
+Requires=dbus.socket
+Conflicts=getty@tty1.service
+
+[Service]
+Type=notify
+EnvironmentFile=-/etc/environment
+ExecStart=/usr/sbin/copycat $COPYCAT_OPTIONS
+StandardInput=tty
+TTYPath=/dev/tty1
+Restart=always
+OOMScoreAdjust=-1000
+
+[Install]
+Alias=display-manager.service
+WantedBy=graphical.target
