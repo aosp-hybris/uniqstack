@@ -59,7 +59,7 @@ int main(int argc, char *argv[])
 {
     qInstallMessageHandler(messageHandler);
 
-    QString verboseMode = qgetenv("COPYCAT_DEBUG");
+    QString verboseMode = qgetenv("UNIQSTACK_DEBUG");
     if (verboseMode == "1")
         verbose = true;
 
@@ -78,7 +78,7 @@ int main(int argc, char *argv[])
     mkdir(xdgRuntimeDirName.toStdString().c_str(), 0700);
     qDebug("Use XDG_RUNTIME_DIR=%s", xdgRuntimeDirName.toUtf8().constData());
 
-    QString shellName = qgetenv("COPYCAT_SHELL");
+    QString shellName = qgetenv("UNIQSTACK_SHELL");
     if (shellName.isEmpty())
         shellName = DEFAULT_SHELL_NAME;
 

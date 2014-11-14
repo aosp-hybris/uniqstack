@@ -4,5 +4,5 @@ set(SYSTEMD_LIB_INSTALL_DIR
   CACHE PATH "Base directory for systemd target and service files")
 
 install(
-  FILES copycat.service
+  FILES uniqstack.service
   DESTINATION ${SYSTEMD_LIB_INSTALL_DIR})

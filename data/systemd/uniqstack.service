@@ -1,12 +1,12 @@
 [Unit]
-Description=Copycat launcher
+Description=UniqStack launcher
 Requires=dbus.socket
 Conflicts=getty@tty1.service
 
 [Service]
 Type=notify
 EnvironmentFile=-/etc/environment
-ExecStart=/usr/sbin/copycat $COPYCAT_OPTIONS
+ExecStart=/usr/sbin/uniqstack $UNIQSTACK_OPTIONS
 StandardInput=tty
 TTYPath=/dev/tty1
 Restart=always

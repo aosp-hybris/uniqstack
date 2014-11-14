@@ -6,12 +6,12 @@ set(SOURCES
   main.cpp
   shellapplication.cpp)
 
-add_executable(copycat ${SOURCES} ${RESOURCES})
-qt5_use_modules(copycat Quick Gui)
+add_executable(uniqstack ${SOURCES} ${RESOURCES})
+qt5_use_modules(uniqstack Quick Gui)
 target_link_libraries(
-  copycat
+  uniqstack
   ${SYSTEMD_LIBRARIES})
 
 install(
-  TARGETS copycat
+  TARGETS uniqstack
   RUNTIME DESTINATION ${CMAKE_INSTALL_SBINDIR})
